@@ -45,17 +45,12 @@ coverage.xml
 *,cover
 .hypothesis/
 
+# Editor
+.idea/
+
 # Translations
 *.mo
 *.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
 
 # Scrapy stuff:
 .scrapy
@@ -71,9 +66,6 @@ target/
 
 # pyenv
 .python-version
-
-# celery beat schedule file
-celerybeat-schedule
 
 # dotenv
 .env
