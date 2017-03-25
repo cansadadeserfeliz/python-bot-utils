@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='python-bot-utils',
-    version='0.0.2',
+    version='0.0.3',
     author='vero4ka',
     packages=['python_bot_utils'],
     description='Helper methods to build python bots for Telegram and Facebook.',
