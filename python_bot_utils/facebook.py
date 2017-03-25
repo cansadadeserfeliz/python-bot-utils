@@ -1,5 +1,6 @@
 import requests
 import logging
+import emoji
 
 logger = logging.getLogger(__name__)
 
@@ -192,7 +193,7 @@ class MessengerBot(object):
         """
         payload = {
             'message': {
-                'text': message,
+                'text': emoji.emojize(message, use_aliases=True),
             }
         }
         self.call_send_api(recipient_id, payload)
