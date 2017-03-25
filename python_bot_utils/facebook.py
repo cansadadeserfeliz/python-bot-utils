@@ -279,7 +279,7 @@ class MessengerBot(object):
                     'payload': {
                         'template_type': 'button',
                         'text': message,
-                        'buttons': buttons,
+                        'buttons': [b.payload for b in buttons],
                     }
                 }
             }
@@ -302,7 +302,7 @@ class MessengerBot(object):
         payload = {
             'message': {
                 'text': message,
-                'quick_replies': quick_replies
+                'quick_replies': [qr.payload for qr in quick_replies]
             }
         }
         self.call_send_api(recipient_id, payload)
